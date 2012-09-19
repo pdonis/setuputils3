@@ -22,11 +22,11 @@ dev_status = "Beta"
 classifiers = """
 Environment :: Console
 Intended Audience :: Developers
-Operating System :: MacOS :: MacOS X
-Operating System :: Microsoft :: Windows
-Operating System :: POSIX
-Operating System :: POSIX :: Linux
+Intended Audience :: System Administrators
+Operating System :: OS Independent
 Topic :: Software Development :: Libraries :: Python Modules
+Topic :: System :: Systems Administration
+Topic :: Utilities
 """
 
 py_modules = ["setuputils"]
