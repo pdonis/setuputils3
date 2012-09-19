@@ -10,6 +10,7 @@ Released under the Python Software Foundation License.
 name = "setuputils"
 version = "0.9"
 description = "A utility module to automate away boilerplate in Python setup scripts."
+startline = 4
 
 author = "Peter A. Donis"
 author_email = "peterdonis@alum.mit.edu"
