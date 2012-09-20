@@ -8,7 +8,7 @@ Released under the Python Software Foundation License.
 
 
 name = "setuputils"
-version = "0.9"
+version = "0.9.1"
 description = "A utility module to automate away boilerplate in Python setup scripts."
 startline = 4
 
