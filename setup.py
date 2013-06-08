@@ -1,7 +1,7 @@
-#!/usr/bin/python -u
+#!/usr/bin/python3 -u
 """
 Setup script for setuputils
-Copyright (C) 2012 by Peter A. Donis
+Copyright (C) 2012-2013 by Peter A. Donis
 
 Released under the Python Software Foundation License.
 """

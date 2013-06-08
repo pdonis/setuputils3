@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """
 Module SETUPUTILS -- Utilities to automate boilerplate in Python setup scripts
-Copyright (C) 2012 by Peter A. Donis
+Copyright (C) 2012-2013 by Peter A. Donis
 
 Released under the Python Software Foundation License.
 
@@ -242,7 +242,7 @@ def add_classifier_python(varmap):
     
     classifiers = varmap.setdefault('classifiers', [])
     if all(not c.startswith("Programming Language ::") for c in classifiers):
-        classifiers.append("Programming Language :: Python")
+        classifiers.append("Programming Language :: Python :: 3")
 
 
 license_map = dict(zip("""
