@@ -59,7 +59,7 @@ import os
 from datetime import datetime
 from distutils.core import Extension
 from functools import partial
-from itertools import chain, dropwhile, islice, izip, takewhile
+from itertools import chain, dropwhile, islice, takewhile
 
 
 def underline(line, underline='~'):
@@ -228,7 +228,7 @@ def convert_lists(varmap,
         except KeyError:
             pass
         else:
-            if isinstance(var, basestring):
+            if isinstance(var, str):
                 varmap[listname] = var.strip().splitlines()
 
 
@@ -245,7 +245,7 @@ def add_classifier_python(varmap):
         classifiers.append("Programming Language :: Python")
 
 
-license_map = dict(izip("""
+license_map = dict(zip("""
 AFL
 Apache
 BSD
@@ -651,7 +651,7 @@ def _add_package_data_lines(pdata, lines):
     # distutils will take care of any duplicate file
     # inclusions anyway, so it doesn't hurt to make sure
     # with the "belt and suspenders" approach here)
-    for pkgname, items in pdata.iteritems():
+    for pkgname, items in pdata.items():
         pkgname = pkgname.replace('.', '/')
         for item in items:
             if '/' in item:
@@ -847,6 +847,6 @@ def setup_vars(varmap, autodiscover=True, force_manifest_in=False):
         make_manifest_in(varmap)
     
     return dict(
-        (k, v) for k, v in varmap.iteritems()
+        (k, v) for k, v in varmap.items()
         if k in distutils_keywords
     )
