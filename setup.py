@@ -9,7 +9,7 @@ Released under the Python Software Foundation License.
 
 name = "setuputils3"
 version = "0.9.2"
-description = "A utility to automate away boilerplate in Python setup scripts."
+description = "A utility to automate away boilerplate in Python 3 setup scripts."
 startline = 4
 
 author = "Peter A. Donis"
