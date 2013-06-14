@@ -33,7 +33,9 @@ py_modules = ["setuputils"]
 
 
 if __name__ == '__main__':
+    from subprocess import call
     from distutils.core import setup
     from setuputils import convert_md_to_rst, setup_vars
     convert_md_to_rst()
+    call(['sed', '-i', 's/github.com\/pdonis/pypi.python.org\/pypi/', 'README'])
     setup(**setup_vars(globals()))
