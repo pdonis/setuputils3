@@ -228,15 +228,14 @@ def provides(varmap):
 
 
 def add_vars(varmap):
-    """Automate adding ``long_description``, ``url``, and ``provides`` setup vars.
+    """Automate adding ``long_description`` and ``url`` setup vars.
     """
     
     if 'long_description' not in varmap:
         varmap['long_description'] = long_description(varmap)
     if 'url' not in varmap:
         varmap['url'] = pypi_url(varmap)
-    if 'provides' not in varmap:
-        varmap['provides'] = provides(varmap)
+    # provides format changed and it's not used anyway, so don't automatically include it
 
 
 def convert_lists(varmap,
