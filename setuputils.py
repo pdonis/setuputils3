@@ -239,7 +239,7 @@ def add_vars(varmap):
 
 
 def convert_lists(varmap,
-                  listnames=('classifiers', 'requires', 'provides', 'obsoletes')):
+                  listnames=('classifiers', 'install_requires')):
     """Convert long strings to lists of strings.
     
     Allows variable names in ``listnames`` to be specified as
@@ -820,9 +820,7 @@ distutils_keywords = dict(
     data_files=list,
     package_dir=str,
     package_data=dict,
-    requires=list,
-    provides=list,
-    obsoletes=list
+    install_requires=list
 )
 
 
